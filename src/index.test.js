@@ -1,7 +1,9 @@
-import { ExampleComponent } from '.'
+import * as index from './index'
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+// @ponicode
+describe('index.updateObject', () => {
+  test('0', () => {
+    const result = index.updateObject({ a: 1 }, { a: 2 })
+    expect(result).toEqual({ a: 2 })
   })
 })
